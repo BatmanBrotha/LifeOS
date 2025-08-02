@@ -1,0 +1,114 @@
+/* Import Tailwind's base, components, and utilities styles */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* --- Custom Global Styles --- */
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+/* Smooth transition for dark mode */
+.bg-gray-50, .bg-gray-900, .bg-white, .dark\:bg-gray-800, .dark\:bg-gray-900, .dark\:text-gray-200, .text-gray-800 {
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+/* Custom scrollbar for a cleaner look */
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+/* Helper class for our new table view items */
+.table-view-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 1.5rem;
+    border-bottom-width: 1px;
+}
+ .table-view-card:last-child {
+    border-bottom-width: 0;
+}
+
+/* --- Your Original Styles (Preserved & Cleaned) --- */
+.container {
+  max-width: 600px;
+  margin: auto;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+h1, h2 {
+  margin-bottom: 20px;
+}
+
+.add-form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.add-form input {
+  flex: 1;
+  padding: 10px;
+}
+
+.add-form button {
+  padding: 10px;
+  font-size: 20px;
+}
+
+.cat-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.cat-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 6px;
+}
+
+.cat-link {
+  text-decoration: none;
+  font-weight: bold;
+  color: #333;
+}
+
+.delete-btn {
+  cursor: pointer;
+  color: red;
+  font-size: 18px;
+}
+
+.back-link {
+  display: inline-block;
+  margin-bottom: 15px;
+  color: blue;
+  text-decoration: underline;
+}
+
+.ai-button {
+  margin-bottom: 15px;
+  padding: 8px 12px;
+  background-color: #444;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
